@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Alfa</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://alfa.bezdela.com/options.php">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <script src="js/countdown.js"></script>
+    <script src="js/jquery.arcticmodal.js"></script>
+
+
+  </head>
+  <body>
+  <div class="wrapper">
+
+          <div class="b-popup" id="popup">    
+
+              <div class="b-popup-content">
+
+              <a href="javascript:PopUpHide()" class="close"><img src="images/cs.png" alt=""></a>
+                <img src="images/pop_img.jpg" alt="">
+
+                <div class="op_block">
+                  <p>Заказать массажер <br>
+ «Альфа» со скидкой <span>50%</span></p>
+                </div>
+                <form action="options.php" method="post" name="call-form" class="call-form"  >
+                  <input type="text" required class="inputbox" name="name" placeholder="Введите ваше имя"> 
+
+                  <input type="phone" required class="inputbox phone-box" name="number" placeholder="Введите ваш телефон">
+
+                  <input name=""  id="submit" type="submit" class="button" value="Заказать"/>
+
+                </form>
+
+                
+
+                <p>Менеджер перезвонит в ближайшее время <br>
+после отправки заказа</p>
+            </div>
+        </div>
+
+
+
+                        <div class="b-popup_2" id="popup_2">    
+
+                            <div class="b-popup-content_2">
+                            <a href="javascript:PopUpHide_2()" class="cls"><img src="images/cls.png" alt=""></a>
+                              <h1>Политика конфидециальности</h1>
+                              <p>Наш сайт  уважительно относится к правам клиента. Соблюдается строгая
+        конфиденциальность при оформлении заказа и прочих заявок, требующих указать
+        контактные данные посетителя. Сведения надёжно сохраняются и защищены от
+        передачи третьим лицам. Согласием на обработку данных клиента исключительно
+        с целью оказания услуг является размещение заказа или прочей заявки на сайте. К
+        персональным данным относится личная информация о клиенте: домашний адрес;
+        имя, фамилия, отчество; сведения о рождении; имущественное, семейное
+        положение; личные контакты (телефон, электронная почта) и прочие сведения,
+        которые перечислены в Законе РФ № 152-ФЗ «О персональных данных» от 27
+        июля 2006 г. Клиент вправе отказаться от обработки персональных данных. Нами в
+        данном случае гарантируется удаление с сайта всех персональных данных в
+        трёхдневный срок в рабочее время. Подобный отказ клиент может оформить
+        простым электронным письмом на адрес, указанный на странице нашего сайта.</p>
+                            </div>
+                      </div>
+
+
+                                      <div class="b-popup_3" id="popup_3">    
+
+                                          <div class="b-popup-content_3">
+                                          <a href="javascript:PopUpHide_3()" class="close">X</a>
+                                            <div class="f_pop_bl">
+                                              <p>Ваш заказ <span>получен!</span></p>
+                                            </div>
+
+                                            <div class="f_pop_bl_2">
+                                              <p>В ближайшее время Вам <br>
+перезвонит менеджер и согласует : <br>
+адрес ,способ доставки и оплаты</p>
+                                            </div>
+
+
+                                          </div>
+                                    </div>
+
+
+
+
+    <div class="header">
+      <div class="header_top_block">
+        <div class="header_top_content">
+          <a href="#" class="logo"></a>          
+          <div class="header_menu" id="menu">
+            <ul>
+              <li><a href="#charct">Характеристики</a></li>
+              <li><a href="#use_">Как пользоваться</a></li>
+              <li><a href="#garant_">Гарантия и доставка</a></li>
+              <li>+7 (914) 664-70-58</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header_block">
+        <div class="header_content">
+          <div class="alfa_name">
+            <p>Вибромасажер  <span>«Альфа»</span> <br> для шеи и плеч</p>
+          </div>
+          <div class="alfa_block">
+          <div class="timer_block">
+            <div id="CDT"></div>
+          </div>
+            <div class="stock_block">
+              <div class="fifty">
+                 <p><span>Акция:</span> масажер со скидкой  <span>50%</span> </p>
+              </div>
+              <div class="price">
+                <span> 2190 р.</span>
+              </div>
+            </div>
+            <img class="pc_1" src="images/pict.jpg" alt="" >
+            <img class="pc_2" src="images/pict_2.jpg" alt="" >
+            <a href="javascript:PopUpShow()" class="order">
+              Заказать
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video_holder">
+    <div id="overlay"></div>
+      <video  width="100%" id="video" autoplay="autoplay" loop="loop">
+            <source src="video/video.mp4"  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+      </video>
+    </div>
+    
+    <div class="best_qualities">
+      <div class="best_qualities_content">
+        <h6>Лучшее качество по доступной цене</h6>
+        <div class="komfort">
+          <img src="images/komf.png" alt="">
+          <div class="kmf_pics_block">
+            <img src="images/imag_1.jpg" alt="">
+            <img src="images/imag.jpg" alt="">
+            <img src="images/imag_3.jpg" alt="">
+          </div>
+          <div class="sld_1">
+            <section class="single-item">
+              <div><img src="images/imag_1.jpg" alt=""></div>
+              <div><img src="images/imag.jpg" alt=""></div>
+              <div><img src="images/imag_3.jpg" alt=""></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="simple">
+          <img src="images/simp.png" alt="">
+          <div class="simple_pics_block">
+            <img src="images/imag_4.jpg" alt="">
+            <img src="images/imag_5.jpg" alt="">
+            <img src="images/imag_6.jpg" alt="">
+          </div>
+
+          <div class="sld_1">
+            <section class="single-item">
+              <div><img src="images/imag_4.jpg" alt=""></div>
+              <div><img src="images/imag_5.jpg" alt=""></div>
+              <div><img src="images/imag_6.jpg" alt=""></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="reliab">
+          <img src="images/relia.png" alt="">
+          <div class="reliab_pics_block">
+            <img src="images/imag_7.jpg" alt="">
+            <img src="images/imag_8.jpg" alt="">
+            <img src="images/imag_9.jpg" alt="">
+          </div>
+
+          <div class="sld_1">
+            <section class="single-item">
+              <div><img src="images/imag_7.jpg" alt=""></div>
+              <div><img src="images/imag_8.jpg" alt=""></div>
+              <div><img src="images/imag_9.jpg" alt=""></div>
+            </section>
+          </div>
+        </div>
+       </div> 
+
+       <a href="javascript:PopUpShow()" class="order_2">Заказать</a>
+      </div>
+
+      <div class="charact" id="charct">
+        <h6>Характеристики</h6>
+        <div class="chract_content">
+          <img src="images/big_alf.png" alt="">
+
+          <div class="table">
+            <table>
+              <tr>
+                <td>Вес:</td>
+                <td>1,6 кг</td>
+              </tr>
+              <tr>
+                <td>Зона массажа:</td>
+                <td>шея, плечи, ноги, бедра</td>
+              </tr>
+              <tr>
+                <td>Мощность:</td>
+                <td>30 Вт</td>
+              </tr>
+              <tr>
+                <td>Напряжение: </td>
+                <td>220В / 12В (в комплекте <br>
+                  зарядка от прикуривателя)</td>
+              </tr>
+              <tr>
+                <td>Авторежим:</td>
+                <td>15 минут</td>
+              </tr>
+              <tr>
+                <td>Материал:</td>
+                <td> PU кожа</td>
+              </tr>
+              <tr>
+                <td>Кол-во роликов:</td>
+                <td> 4</td>
+              </tr>
+              <tr>
+                <td>Размеры: </td>
+                <td>50см х 36см</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="advantages">
+        <h6>Преимущества</h6>
+        <div class="adv_content">
+          <div class="simple_mass">
+          <p>Обычный массаж</p>
+            <img src="images/smpl.jpg" alt="">
+            <div class="red_back">
+              <span>3000 р/час</span>
+            </div>
+          </div>
+          <div class="mass_alfa">
+            <p>Массажер «Альфа»</p>
+            <div class="mass_alfa_bl">
+              <img src="images/grl.jpg" alt="">
+
+              <div class="list">
+                <ul>
+                  <li><span>Долговечность</span></li>
+                  <li><span>Гарантия 6 месяцев</span></li>
+                  <li><span>Можно использовать всегда и везде</span></li>
+                  <li><span>Инфрокрасный прогрев</span></li>
+                  <li><span>Экономия времени</span></li>
+                  <li><span>Экономия денег</span></li>
+                  <li><span>Легкодоступность</span></li>
+                </ul>
+              </div>
+            </div>
+            <a href="javascript:PopUpShow()" class="orgn">всего 2190 р</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="complect">
+        <h6>Комплектация</h6>
+        <div class="complect_block">
+            <div class="alf">
+              <img src="images/alf.png" alt="">
+              <p>Массажер " Альфа "</p>
+            </div>
+
+            <div class="zariad">
+              <img src="images/zar.png" alt="">
+              <p>Зарядка для сети + зарядка для автомобиля</p>
+            </div>
+
+            <div class="pereh">
+              <img src="images/pereh.png" alt="">
+              <p>Переходник <br> для зарядки от сети</p>
+            </div>
+        </div>
+
+        <a href="javascript:PopUpShow()">Купить массажер сейчас</a>
+      </div>
+
+      <div class="use_block" id="use_">
+      <h6>Где вы можете использовать</h6>
+        <div class="use_block_cont">
+          <div class="use_block_1">
+              <div class="home">
+                <img src="images/home.jpg" alt="">
+                <p>Дома</p>
+              </div>
+
+              <div class="relax">
+                <img src="images/rlx.jpg" alt="">
+                <p>На отдыхе</p>
+              </div>
+          </div>
+
+          <div class="use_block_2">
+            <div class="work">
+              <img src="images/work.jpg" alt="">
+              <p>На работе</p>
+            </div>
+
+            <div class="plane">
+              <img src="images/plane.jpg" alt="">
+              <p>В самолете</p>
+            </div>
+          </div>
+
+          <div class="use_block_3">
+            <div class="drive">
+              <img src="images/drv.jpg" alt="">
+              <p>За рулем</p>
+            </div>
+
+            <div class="prc">
+              <img src="images/price.jpg" alt="">
+              <p>Как подарок</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="use_block_m">
+            <div class="fr_use_bl">
+              <div class="home_m">
+                <img src="images/home_m.jpg" alt="">
+                <p>Дома</p>
+              </div>
+
+              <div class="drive_m">
+                <img src="images/drv_2.jpg" alt="">
+                <p>За рулем</p>
+              </div>
+
+              <div class="plane_m">
+                <img src="images/plane_2.jpg" alt="">
+                <p>В самолете</p>
+              </div>
+            </div>
+
+            <div class="sc_use_bl">
+              <div class="work_m">
+                <img src="images/work_2.jpg" alt="">
+                <p>На работе</p>
+              </div>
+
+              <div class="relax_m">
+                <img src="images/rlx_2.jpg" alt="">
+                <p>На отдыхе</p>
+              </div>
+
+              <div class="prc_2">
+                <img src="images/prc_2.jpg" alt="">
+                <p>Как подарок</p>
+              </div>
+            </div>
+          
+        </div>
+
+
+        
+      </div>
+
+      <div class="reviews_block">
+      <h6>Отзывы</h6>
+        <div class="rev_item_block">
+          <section class="single-item_2">
+            <div class="rev_item">
+              <img src="images/rev.jpg" alt="">
+              <p>Элизавета Бродина</p>
+              <span>продавец</span>
+              <div class="review">
+                <p>Я никогда не верила любой рекламе о товарах, но  однажды мама  купила этот массажер, т.к. до этого мы пользовались обычными массажерами. В эффекте похудения не сомневаюсь и приятных бонусов у «Альфа» много</p>
+              </div>
+            </div>
+            <div class="rev_item rv_2">
+              <img src="images/pic.jpg" alt="">
+              <p>Дмитрий Боднаренко</p>
+              <span>программист</span>
+              <div class="review">
+                <p>Хорошо расслябляет и снимает стресс и 
+никакого алкоголя или сигарет не нужно . Мне
+ очень понравилось и при этом  очень качественная
+ вещь уже больше года пользуюсь и проблем нет.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="info_block">
+        <div class="info_bl_content">
+          <div class="deliv">
+              <img src="images/rus.png" alt="">
+              <p>Доставка по России от 2х дней</p>
+          </div>
+          <div class="opp">
+            <img src="images/can.png" alt="">
+              <p>Демострация возможностей</p>
+          </div>
+          <div class="pay">
+             <img src="images/bl.png" alt="">
+              <p>Оплата любым удобным способом при получении</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="garanty" id="garant_">
+          <div class="gar_top_block">
+            <div class="numb_block_1">
+              <div class="numb_1">
+                <img src="images/one.png" alt="">
+                <p>Оставьте заявку на сайте или по телефону</p>
+              </div>
+              <img src="images/ar.png" alt="">
+              <div class="numb_2">
+                <img src="images/two.png" alt="">
+                <p>Дождитесь звонка менеджера и согласуйте адрес доставки</p>
+              </div>
+            </div>
+            <img src="images/ar.png" alt="">
+            <div class="numb_block_2">
+              <div class="numb_3">
+                <img src="images/three.png" alt="">
+                <p>Получите товар у курьера или на почте,оплата после получения</p>
+              </div>
+                <img src="images/ar.png" alt="">
+              <div class="numb_4">
+                <img src="images/four.png" alt="">
+                <p>Наслаждайтесь</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="garan_content">
+              <div class="gr_block_1">
+                  <div class="gr_1">
+                    <img src="images/ic_1.png" alt="">
+                    <div class="tx_bl">
+                      <h1>Гарантия на товар</h1>
+                      <p>Гарантия на товар 6 месяцев с момента получения.В течение этого времени принимаются все рекламации на товар</p>
+                    </div>
+                  </div>
+
+                  <div class="gr_1">
+                    <img src="images/ic_2.png" alt="">
+                    <div class="tx_bl">
+                      <h1>Гарантия качества</h1>
+                      <p>Мы официальный представитель
+      завода.Кроме того, что получаем 
+      уже проверенную продукци,каждое
+      изделие проверяем перед отправкой</p>
+                    </div>
+                  </div>
+
+                  <div class="gr_1">
+                    <img src="images/ic_3.png" alt="">
+                    <div class="tx_bl">
+                      <h1>Гарантия возврата</h1>
+                      <p>В течение 14 дней независимо от
+      причины. Для этого отправьте нам 
+      обратно товар, в заводской упаковке,
+      без повреждений</p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="gr_block_2">
+                <img src="images/rusia.png" alt="">
+                <a href="javascript:PopUpShow()">Заказать</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer">
+
+
+        <div class="footer_cont">
+          <div class="foot_block_1">
+            <img src="images/logo_resp.jpg" alt="">
+            <ul>
+              <li>ИП Анисимов Андрей</li>
+              <li>Андреевич</li>
+              <li>ИНН 254300912027</li>
+              <li>0ГРН 315254300003674</li>
+            </ul>
+            
+          </div>
+          <div class="footer_block_2">
+            <div class="fb_1">
+              <p>Звоните : 8 (914) 664 - 70 - 58</p>
+            <p>Ежедневно с 06 до 18 по Москве</p>
+            </div>
+            <div class="soc">
+              <ul>
+                <li><a href=""><img src="images/vk.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/facebo.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/tw.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/odnkl.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/mail.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/gogle.jpg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="oplata">
+              <p>Мы принимаем к оплате :</p>
+              <ul>
+                <li><img src="images/unn.jpg" alt=""></li>
+                <li><img src="images/op1.jpg" alt=""></li>
+                <li><img src="images/op2.jpg" alt=""></li>
+                <li><img src="images/op3.jpg" alt=""></li>
+                <li><img src="images/op4.jpg" alt=""></li>
+                <li><img src="images/op5.jpg" alt=""></li>
+              </ul>
+            </div>         
+          </div>
+          <a class="kof" href="javascript:PopUpShow_2()">Конфиденциальность</a>
+        </div>
+        
+      </div>
+
+    </div> 
+
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/init.js"></script>
+
+
+    <script>
+      var overlay = document.getElementById('overlay');
+      var vid = document.getElementById('video');
+
+      if(overlay.addEventListener){
+          overlay.addEventListener("click", play, false)
+        }else if(overlay.attachEvent){
+          overlay.attachEvent("onclick", play)
+        }
+
+      function play() { 
+          if (vid.paused){
+              vid.play(); 
+              overlay.className = "o";
+          }else {
+              vid.pause(); 
+              overlay.className = "";
+          }
+      } 
+    </script>
+
+    <script src="slick/slick.js" type="text/javascript"></script>
+    <script>
+
+      $('.single-item').slick({
+        dots:false,
+        slidesToShow: 1, 
+        slidesToScroll: 1
+      });
+
+
+      $('.single-item_2').slick({
+        dots:false,
+        slidesToShow: 1, 
+        slidesToScroll: 1
+      });
+    </script> 
+
+    <script>
+      
+       $(document).ready(function(){
+          $("#menu").on("click","a", function (event) {
+              event.preventDefault();
+              var id  = $(this).attr('href'),
+                  top = $(id).offset().top;
+              $('body,html').animate({scrollTop: top}, 1500);
+          });
+      });
+    </script>
+
+
+
+  </body>
+</html>
