@@ -1,0 +1,214 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+
+.single-item .slick-list {
+   width: 100%;
+}
+
+.single-item img{
+    max-width: 100%;
+    height: auto;
+}
+/* Arrows */
+
+
+.slick-prev {
+    display: block !important;
+    position: absolute;
+    top:42%;
+    left: -85px;
+    background: url(../images/prev_ar.png) no-repeat right 12px top 2px;
+    width: 59px;
+    height: 36px;
+    text-indent: -9999px;
+    border: none;
+    z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-prev:focus{
+    background: url(../images/prev_ar.png) no-repeat right 12px top 2px;
+}
+
+.slick-next {
+    display: block !important;
+    position: absolute;
+    top: 42%;
+    right: -85px;
+    background: url(../images/next_ar.png) no-repeat left 12px top 2px;
+    width: 59px;
+    height: 36px;
+    text-indent: -9999px;
+    border: none;
+    z-index: 1;
+}
+
+.slick-next:hover,
+.slick-next:focus{
+    background: url(../images/next_ar.png) no-repeat left 12px top 2px;
+}
+
+
+
+.single-item_2 .slick-prev {
+    display: block !important;
+    position: absolute;
+    top:78%;
+    left: -203px;
+    background: url(../images/prev_b.jpg) no-repeat right 12px top 2px;
+    width: 80px;
+    height: 65px;
+    text-indent: -9999px;
+    border: none;
+    z-index: 1;
+}
+
+
+
+.single-item_2 .slick-next {
+    display: block !important;
+    position: absolute;
+    top: 78%;
+    right: -203px;
+    background: url(../images/next_b.jpg) no-repeat left 12px top 2px;
+    width: 80px;
+    height: 65px;
+    text-indent: -9999px;
+    border: none;
+    z-index: 1;
+}
+
+
+
+
+@media(min-width: 880px) and (max-width: 1090px){
+
+    .single-item_2 .slick-next {
+        right: -100px;
+    }
+
+    .single-item_2 .slick-prev {
+        left: -100px;
+    }
+}
+
+@media(min-width: 688px) and (max-width: 879px){
+
+    .reviews_block {
+        margin: 86px 0 0 0;
+    }
+
+    .review {
+        width: 79%;
+         margin: 47px auto 0;
+    }
+
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .single-item_2 .slick-next {
+        width: 59px;
+        height: 36px;
+        right: -10px;
+        background: url(../images/next_ar.png) no-repeat left 12px top 2px;
+    }
+
+    .single-item_2 .slick-prev {
+        width: 59px;
+        height: 36px;
+        left: -10px;
+        background: url(../images/prev_ar.png) no-repeat left 12px top 2px;
+    }
+}
+
+@media(max-width: 687px){
+
+
+    .reviews_block h6 {
+        font-size: 35px;
+    }
+
+    .reviews_block {
+        margin: 86px 0 0 0;
+    }
+
+    .rev_item_block {
+        width: 320px;
+        margin: 20px auto;
+    }
+
+    .rev_item > p {
+        font-size: 19px;
+        margin: 14px 0 3px 0;
+    }
+
+    .rev_item span {
+        font-size: 15px;
+        width: 68px;
+    }
+
+    .review {
+        width: 100%;
+        margin: 12px auto 0;
+    }
+
+    .single-item_2 .slick-slide img {
+        display: block;
+        width: 90px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .review p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .single-item_2 .slick-next {
+        width: 36px;
+        height: 36px;
+        top: 72%;
+        right: -41px !important;
+        background: url(../images/next_ar.png) no-repeat left 0px top 2px;
+    }
+
+    .single-item_2 .slick-prev {
+        width: 36px;
+        height: 36px;
+        top: 72%;
+        left: -41px !important;
+        background: url(../images/prev_ar.png) no-repeat right 0px top 2px;
+    }
+}
+
+@media(max-width: 419px){
+
+    .rev_item_block {
+        width: 299px;
+    }
+
+    .single-item_2 .slick-next {
+       display: none !important;
+    }
+
+    .single-item_2 .slick-prev {
+        display: none !important;
+    }
+}
